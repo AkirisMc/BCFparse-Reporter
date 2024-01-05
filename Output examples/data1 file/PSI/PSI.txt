@@ -1,0 +1,5 @@
+# PSI, Per-Sample Indels
+# PSI	[2]id	[3]sample	[4]in-frame	[5]out-frame	[6]not applicable	[7]out/(in+out) ratio	[8]nHets	[9]nAA
+PSI	0	IHCAPX8-1	0	0	0	0.00	572613	322627
+PSI	0	IHCAPX8-2	0	0	0	0.00	567080	316119
+PSI	0	IHCAPX8-3	0	0	0	0.00	597296	332402
