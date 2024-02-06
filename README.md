@@ -12,7 +12,9 @@
 * Additionally, the program displays the *Summary numbers* section of the *vchk* file directly in the command line interface.
 
 ## Usage 
-To run the program, users must enter the input file’s name, the output directory’s name, and the argument/s. These arguments (see List of parameters table) specify which sections of the *vchk* file to parse. Users have the option to specify one or multiple arguments, or none at all. As this is a multimodular program, only the primary script (*mainfunction.py*) needs to be run on the command line since it functions as the program’s starting point.
+To run the program, users must enter the input file’s name, the output directory’s name, and the argument/s. These arguments (see List of parameters table) specify which sections of the *vchk* file to parse. Users have the option to specify one or multiple arguments, or none at all.
+
+As this is a multimodular program, only the primary script (*mainfunction.py*) needs to be run on the command line because it functions as the program’s starting point.
 
 ```python mainfunction.py input_file.vchk output_folder_name -argument_flag```
 
@@ -28,3 +30,18 @@ This example is for parsing two regions of the *vchk* file:
 This example will only display the *Summary numbers* section in the command line as no arguments were specified:
 
 ```python mainfunction.py data1.vchk data1files```
+
+## List of parameters 
+| Parameter | Abbreviation | Description                             |
+| :-------: | :----------: | :-------------------------------------: |
+| -tstv     | TSTV         | Transitions/Transversions               |
+| -sis      | SiS          | Singleton stats                         |
+| -af       | AF           | Stats by non-reference allele frequency |
+| -qual     | QUAL         | Stats by quality                        |
+| -idd      | DD           | InDel distribution                      |
+| -st       | ST           | Substitution types                      |
+| -dp       | DP           | Depth distribution                      |
+| -psc      | PSC          | Per-sample counts                       |
+| -psi      | PSI          | Per-Sample Indels                       |
+| -hwe      | HWE          | Hardy Weinberg equilibrium              |
+| -all      | -            | Process all sections                    |
