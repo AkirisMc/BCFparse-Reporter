@@ -54,7 +54,9 @@ This example will only display the *Summary numbers* section in the command line
 This program relies on libraries that are not part of the standard Python distribution, such as *Matplotlib* and *Pandas*.
 
 *Matplotlib* can be installed typing:
+
 ```pip install matplotlib```
 
 *Pandas* can be installed typing:
+
 ```pip install pandas```
