@@ -11,12 +11,16 @@
 
 * Additionally, the program displays the *Summary numbers* section of the *vchk* file directly in the command line interface.
 
+**Note:** Both the text and PNG files will be stored within a sub-directory named after the parsed region, which will be created within the designated output directory. 
+
 ## Usage 
 To run the program, users must enter the input file’s name, the output directory’s name, and the argument/s. These arguments (see [List of parameters](https://github.com/AkirisMc/BCFparse-Reporter?tab=readme-ov-file#list-of-parameters) table) specify which sections of the *vchk* file to parse. Users have the option to specify one or multiple arguments, or none at all.
 
 As this is a multimodular program, only the primary script (*mainfunction.py*) needs to be run on the command line because it functions as the program’s starting point.
 
 ```python mainfunction.py input_file.vchk output_folder_name -argument_flag```
+
+**Note:** The *vchk* file must be situated within the output directory for the program to function correctly. The output directory can bear the name of any existing folder within the user's parent directory. 
 
 ## Examples
 Here’s an example demonstrating how the program can be run to parse only the *tstv* region from a *vchk* file:
@@ -45,3 +49,12 @@ This example will only display the *Summary numbers* section in the command line
 | `-psi`      | PSI          | Per-Sample Indels                       |
 | `-hwe`      | HWE          | Hardy Weinberg equilibrium              |
 | `-all`      | -            | Process all sections                    |
+
+## Library dependencies
+This program relies on libraries that are not part of the standard Python distribution, such as *Matplotlib* and *Pandas*.
+
+*Matplotlib* can be installed typing:
+```pip install matplotlib```
+
+*Pandas* can be installed typing:
+```pip install pandas```
